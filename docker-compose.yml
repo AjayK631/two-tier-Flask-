@@ -1,7 +1,8 @@
 version: "3"
 services:
   backend:
-    image: ajayk63/two-tier:latest
+    build:
+      context: .
     ports:
       - "5000:5000"
     environment:
